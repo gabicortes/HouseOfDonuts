@@ -1,0 +1,15 @@
+.WrapperShopDecription {
+  padding: 50px 50px;
+}
+
+.titleNuestroLocal {
+  font-family: GarageImperio;
+  font-size: 52px;
+  text-align: center;
+}
+
+.TextNuestroLocal {
+  padding: 30px 30px;
+  font-size: 16px;
+  border: 1px solid black;
+}

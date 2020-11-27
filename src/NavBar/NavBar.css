@@ -1,0 +1,32 @@
+.navBarDiv {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  top: 0;
+  z-index: 1;
+}
+
+.logoImage {
+  height: 75px;
+  width: 75px;
+  margin-left: 40px;
+}
+
+.buttonNavBar {
+  font-weight: bold;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.buttonsNavBar {
+  margin: 0px 15px 0 0;
+}
+
+.buttonNavBar:hover {
+  cursor: pointer;
+}

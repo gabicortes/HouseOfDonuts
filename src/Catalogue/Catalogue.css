@@ -1,0 +1,45 @@
+.titleNuestrasDonas {
+  padding-top: 40px;
+      font-size: 52px;
+  text-align: center;
+  font-family: GarageImperio;
+}
+
+#catalogueLuxuryWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 55px;
+}
+
+.photoCatalogueDonutLuxury {
+  flex: 20%;
+  text-align: center;
+}
+
+.photoCatalogueDonutLuxuryIndividual {
+  width: 210px;
+  height: auto;
+}
+
+.titleEachLine {
+  padding-top: 30px;
+  padding-left: 60px;
+  font-size: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.firstPartOfTheName {
+  font-family: GarageImperio;
+  font-size: 43px;
+}
+.secondPartOfTheName {
+  padding-left: 8px;
+}
+
+.nameOfDonut {
+  text-align: center;
+  font-size: 21px;
+}

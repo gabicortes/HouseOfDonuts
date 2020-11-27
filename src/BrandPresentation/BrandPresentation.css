@@ -1,0 +1,14 @@
+.firstPagePhoto {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+
+.firstPageLogo {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  z-index: 0;
+  top: 34%;
+  left: 34%;
+}

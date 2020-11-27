@@ -1,0 +1,17 @@
+@font-face {
+  font-family: GarageImperio;
+  src: url("./Fonts/GARAGEIMPERIO.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: "Overlock", cursive;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
