@@ -1,27 +1,20 @@
 import React from "react";
-import GoogleMapReact from "google-map-react";
+import { KeyBingMap } from "../KeyBingMap.js";
+import BingMap from "./BingMap/BingMap";
 import "./Map.css";
-import { keyGoogleMaps } from "../KeyGoogleMaps";
-import { LocationPin } from "./LocationPin";
 
-export function Map(props) {
+export function Map() {
   return (
-    <div className="map">
-      <h2 className="map-h2">Come Visit Us At Our Campus</h2>
-
-      <div className="google-map">
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: keyGoogleMaps }}
-          defaultCenter={props.location}
-          defaultZoom={props.zoomLevel}
-        >
-          <LocationPin
-            lat={props.location.lat}
-            lng={props.location.lng}
-            text={props.location.address}
-          />
-        </GoogleMapReact>
-      </div>
+    <div className="mapBingWrapper">
+      <div>Te esperamos en Conesa 102, Quilmes.</div>
+      <BingMap
+        className="mapBing"
+        mapOptions={{
+          lat: -34.7191,
+          lng: -58.26212,
+          credentials: KeyBingMap,
+        }}
+      />
     </div>
   );
 }
