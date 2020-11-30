@@ -4,6 +4,7 @@ import { BrandPresentation } from "./BrandPresentation/BrandPresentation";
 import { ShopDescription } from "./ShopDescription/ShopDescription";
 import { Catalogue } from "./Catalogue/Catalogue";
 import { Map } from "./Map/Map";
+import { Services } from "./Services/Services";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         }}
         zoomLevel={18}
       />
+      <Services />
     </div>
   );
 }
