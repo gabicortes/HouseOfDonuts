@@ -42,7 +42,7 @@ export function Services() {
             className="hyperlinkPedido"
             target="_blank"
           >
-            Lleval🍩
+            D🍩nut-away
           </a>
         </button>
       </div>

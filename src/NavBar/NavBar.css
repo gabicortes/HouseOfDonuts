@@ -1,7 +1,7 @@
 .navBarDiv {
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   position: fixed;
@@ -10,21 +10,28 @@
   z-index: 1;
 }
 
-.logoImage {
+.imageNavBar {
   height: 75px;
-  width: 75px;
-  margin-left: 40px;
+  width: auto;
+  object-fit: cover;
+  padding: 0 15px;
+}
+
+.logo {
+  height: 64px;
+  width: auto;
+  object-fit: cover;
+  padding: 0 15px;
 }
 
 .buttonNavBar {
   font-weight: bold;
-  padding: 15px;
   text-decoration: none;
   color: black;
 }
 
-.buttonsNavBar {
-  margin: 0px 15px 0 0;
+.buttonNavBar {
+  margin: 0px 15px;
 }
 
 .buttonNavBar:hover {

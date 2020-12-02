@@ -1,69 +1,46 @@
 import React from "react";
 import "./Catalogue.css";
-import donut from "./donutCatalogue.jpeg";
+import grey from "./Grey.jpg";
+import lighterGrey from "./lighterGrey.jpg";
+import donut from "./donut.png";
+import { FaCrown } from "react-icons/fa";
 
-function Catalogue() {
+export function Catalogue() {
   return (
     <div>
-      <div className="titleNuestrasDonas">Nuestras donas.</div>
-      <div className="titleEachLine titleLineaLuxury">
-        <div className="firstPartOfTheName">Linea</div>
-        <div className="secondPartOfTheName"> Luxury </div>
+      <div className="titleLineas">
+        <div>Luxury</div>
+        <FaCrown />
       </div>
-      <div id="catalogueLuxuryWrapper">
-        <div className="photoCatalogueDonutLuxury">
-          <img className="photoCatalogueDonutLuxuryIndividual" src={donut} />
-          <div className="nameOfDonut">Bonobon</div>
-        </div>
-        <div className="photoCatalogueDonutLuxury">
-          <img className="photoCatalogueDonutLuxuryIndividual" src={donut} />
-          <div className="nameOfDonut">Marroc</div>
-        </div>
-        <div className="photoCatalogueDonutLuxury">
-          <img className="photoCatalogueDonutLuxuryIndividual" src={donut} />
-          <div className="nameOfDonut">Ferrero Rocher</div>
-        </div>
-        <div className="photoCatalogueDonutLuxury">
-          <img className="photoCatalogueDonutLuxuryIndividual" src={donut} />
-          <div className="nameOfDonut">Oreo</div>
-        </div>
-      </div>
-      <div className="titleEachLine titleLineaColorful">
-        <div className="firstPartOfTheName">Linea</div>
-        <div className="secondPartOfTheName"> Colorful</div>
-      </div>
-      <div id="catalogueLuxuryWrapper">
-        <div className="photoCatalogueDonutLuxury">
-          <img className="photoCatalogueDonutLuxuryIndividual" src={donut} />
-          <div className="nameOfDonut">Amarilla</div>
-        </div>
-        <div className="photoCatalogueDonutLuxury">
-          <img className="photoCatalogueDonutLuxuryIndividual" src={donut} />
-          <div className="nameOfDonut">Cian</div>
-        </div>
-        <div className="photoCatalogueDonutLuxury">
-          <img className="photoCatalogueDonutLuxuryIndividual" src={donut} />
-          <div className="nameOfDonut">Magenta</div>
-        </div>
+      <div className="LuxuryLine">
+        <img className="imageCatalogue2" src={grey} />
+        <img className="imageCatalogue2" src={donut} />
+        <img className="imageCatalogue2" src={grey} />
+        <img className="imageCatalogue2" src={donut} />
+        <img className="imageCatalogue2" src={donut} />
+        <img className="imageCatalogue2" src={lighterGrey} />
+        <img className="imageCatalogue2" src={donut} />
+        <img className="imageCatalogue2" src={lighterGrey} />
       </div>
 
-      <div className="titleEachLine titleEachLinetitleEspeciales">
-        <div className="firstPartOfTheName">Cake</div>
-        <div className="secondPartOfTheName">& Pocket</div>
+      <div className="titleLineas">Colorful</div>
+
+      <div className="LuxuryLine">
+        <img className="imageColorfulCatalogue2" src={donut} />
+        <img className="imageColorfulCatalogue2" src={donut} />
+        <img className="imageColorfulCatalogue2" src={donut} />
       </div>
 
-      <div id="catalogueLuxuryWrapper">
-        <div className="photoCatalogueDonutLuxury">
-          <img className="photoCatalogueDonutLuxuryIndividual" src={donut} />
-          <div className="nameOfDonut">Donut Cake</div>
+      <div className="cakeYPocket">
+        <div className="pocket">
+          <div className="titleLineas titlecakeypoket">Pocket</div>
+          <img className="imagePocketCatalogue2" src={donut} />
         </div>
-        <div className="photoCatalogueDonutLuxury">
-          <img className="photoCatalogueDonutLuxuryIndividual" src={donut} />
-          <div className="nameOfDonut">Pocket</div>
+        <div className="cake">
+          <div className="titleLineas titlecakeypoket">Cake</div>
+          <img className="imagePocketCatalogue2" src={donut} />
         </div>
       </div>
     </div>
   );
 }
-
-export { Catalogue };

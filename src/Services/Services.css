@@ -41,7 +41,7 @@
   background: transparent;
   width: fit-content;
   font-size: 26px;
-  padding: 15px;
+  padding: 10px;
   border-radius: 20px;
   box-shadow: 1px 2px black;
 }
@@ -55,4 +55,9 @@
   padding-top: 40px;
   width: 75%;
   font-size: 24px;
+}
+
+.buttonImage {
+  width: 50px;
+  height: auto;
 }
