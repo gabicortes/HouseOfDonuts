@@ -3,7 +3,6 @@ import "./App.css";
 import { NavBar } from "./NavBar/NavBar";
 import { BrandPresentation } from "./BrandPresentation/BrandPresentation";
 import { ShopDescription } from "./ShopDescription/ShopDescription";
-import { Map } from "./Map/Map";
 import { Services } from "./Services/Services";
 import { Catalogue } from "./Catalogue/Catalogue";
 import { FiInstagram } from "react-icons/fi";
@@ -47,7 +46,6 @@ function App() {
       <div ref={InstagramRef}>
         <Instagram />
       </div>
-      <div></div>
     </div>
   );
 }

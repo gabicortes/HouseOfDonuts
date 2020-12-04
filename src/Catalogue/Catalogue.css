@@ -1,10 +1,89 @@
 .LuxuryLine {
-  padding: 40px 120px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 90%;
+  padding: 0 5%;
+}
+
+.donut1,
+.donut3,
+.donut6,
+.donut8 {
+  color: #613f23;
+  font-size: 22px;
+  text-align: center;
+}
+.textDescriptionDonut {
+  padding: 20% 15%;
+  color: #613f23;
+  transition: transform 0.5s ease;
+  letter-spacing: 1.5px;
+}
+/*
+.donut1,
+.donut2,
+.donut3,
+.donut4,
+.donut5,
+.donut6,
+.donut7,
+.donut8 {
+  border: 2px solid #613f23;
+} */
+
+.donut1 {
+  order: 1;
+  background-color: #f7c6b2;
+}
+
+.donut2 {
+  order: 2;
+}
+
+.donut3 {
+  order: 3;
+  background-color: #db93b0;
+}
+
+.donut4 {
+  order: 4;
+}
+
+.donut5 {
+  order: 5;
+}
+
+.donut6 {
+  order: 6;
+  background-color: #c0effc;
+}
+
+.donut7 {
+  order: 7;
+}
+
+.donut8 {
+  order: 8;
+  background-color: #bbe6e4;
+}
+
+.donut5:hover ~ .donut1 .textDescriptionDonut {
+  transform: scale(1.1);
+}
+
+.donut2:hover ~ .donut6 .textDescriptionDonut {
+  transform: scale(1.1);
+}
+
+.donut7:hover ~ .donut3 .textDescriptionDonut {
+  transform: scale(1.1);
+}
+
+.donut4:hover ~ .donut8 .textDescriptionDonut {
+  transform: scale(1.1);
 }
 
 .imageCatalogue2 {
@@ -14,8 +93,64 @@
   object-fit: cover;
 }
 
+.donut9 {
+  order: 1;
+}
+.donut10 {
+  order: 5;
+}
+.donut11 {
+  order: 3;
+}
+.donut12 {
+  order: 2;
+
+  background-color: #c0effc;
+}
+.donut13 {
+  order: 4;
+  background-color: #ffc759;
+}
+.donut14 {
+  order: 6;
+  background-color: #db93b0;
+}
+
+.donut12,
+.donut13,
+.donut14 {
+  color: #613f23;
+  font-size: 23px;
+  text-align: center;
+}
+
+.textDescriptionDonutColor {
+  padding: 32% 15%;
+  color: #613f23;
+  transition: transform 0.5s ease;
+}
+/*
+.donut9,
+.donut10,
+.donut11,
+.donut12,
+.donut13,
+.donut14 {
+  border: 2px solid #613f23;
+}
+*/
+.donut9:hover ~ .donut13 .textDescriptionDonutColor {
+  transform: scale(1.1);
+}
+.donut10:hover ~ .donut12 .textDescriptionDonutColor {
+  transform: scale(1.1);
+}
+.donut11:hover ~ .donut14 .textDescriptionDonutColor {
+  transform: scale(1.1);
+}
 .titleLineas {
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,14 +158,20 @@
   font-family: garageimperio;
   justify-content: center;
 }
+.colorfulLine {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15%;
+}
 
 .imageColorfulCatalogue2 {
-  flex: 25%;
-  width: 200px;
+  flex: 26% 1;
+  width: 150px;
   height: 300px;
   object-fit: cover;
-  padding: 30px;
-  background: #b9b9b9;
 }
 
 .cakeYPocket {
@@ -38,21 +179,19 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 40px;
+  padding: 0 5%;
 }
 
 .imagePocketCatalogue2 {
-  padding: 20px;
-  background-color: #323232;
   flex: 40%;
   width: 300px;
-  height: 300px;
+  height: auto;
 }
 
 .pocket {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-evenly;
 }
 
 .cake {
@@ -63,4 +202,37 @@
 
 .titlecakeypoket {
   padding-bottom: 30px;
+}
+
+.cakeAndPocketTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+.andTitle {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.donut16 {
+  background-color: #f7c6b2;
+}
+
+.donut18 {
+  background-color: #ffc759;
+}
+
+.donut15:hover ~ .donut16 .textDescriptionDonut {
+  transform: scale(1.1);
+}
+
+.donut17:hover ~ .donut18 .textDescriptionDonut {
+  transform: scale(1.1);
+}
+
+.textDescriptionDonut {
+  color: #613f23;
+  transition: transform 0.5s ease;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+  text-align: center;
 }
