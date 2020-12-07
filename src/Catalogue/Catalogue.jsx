@@ -8,7 +8,7 @@ export function Catalogue() {
     <div>
       <div className="titleLineas">
         <div>Luxury</div>
-        <FaCrown />
+        <FaCrown className="crownEmoticon" />
       </div>
       <div className="LuxuryLine">
         <img className="imageCatalogue2 donut2" src={donut} />

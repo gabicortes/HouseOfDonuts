@@ -3,7 +3,6 @@
 }
 
 .titleNuestroLocal {
-  font-family: GarageImperio;
   font-size: 52px;
   text-align: center;
   padding-bottom: 40px;
@@ -24,7 +23,6 @@
   text-align: center;
   color: white;
   font-weight: bold;
-  /*  border: 2px solid #db93b0; */
   line-height: 1.5;
   z-index: 1;
 }

@@ -155,9 +155,14 @@
   flex-direction: row;
   align-items: center;
   font-size: 44px;
-  font-family: garageimperio;
   justify-content: center;
+  color: black;
 }
+
+.crownEmoticon {
+  padding-left: 8px;
+}
+
 .colorfulLine {
   display: flex;
   flex-direction: row;

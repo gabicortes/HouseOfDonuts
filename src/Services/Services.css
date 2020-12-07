@@ -1,30 +1,9 @@
-.WrapperServices {
-  padding-top: 100px;
-  padding-bottom: 60px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-}
-
-.deliveryWrapper {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.takeAwayWrapper {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .fullTitle {
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 70px;
+  color: white;
 }
 
 .firstPartTitle {
@@ -32,32 +11,27 @@
 }
 
 .hyperlinkPedido {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .buttonDonut {
   margin-top: 40px;
-  background: transparent;
+  background-color: black;
+  color: white;
   width: fit-content;
   font-size: 26px;
   padding: 10px;
-  border-radius: 20px;
-  box-shadow: 1px 2px black;
 }
 
 .hyperlinkPedido:visited {
-  color: black;
   text-decoration: none;
 }
 
 .contentServiceShipping {
   padding-top: 40px;
-  width: 75%;
+  width: 70%;
+  text-align: center;
   font-size: 24px;
-}
-
-.buttonImage {
-  width: 50px;
-  height: auto;
+  color: white;
 }

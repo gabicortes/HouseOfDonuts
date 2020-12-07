@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./App.css";
 import { NavBar } from "./NavBar/NavBar";
 import { BrandPresentation } from "./BrandPresentation/BrandPresentation";
@@ -7,7 +7,7 @@ import { Services } from "./Services/Services";
 import { Catalogue } from "./Catalogue/Catalogue";
 import { FiInstagram } from "react-icons/fi";
 import { Instagram } from "./Instagram/Instagram";
-import SimpleMap from "./Map2/Map2";
+import { Map } from "./Map/Map";
 
 function App() {
   const nuestroLocalRef = useRef(null);
@@ -37,9 +37,7 @@ function App() {
       <div ref={catalogoMiRef}>
         <Catalogue />
       </div>
-      <div ref={ubicacionRef}>
-        <SimpleMap />
-      </div>
+      <Map />
       <div ref={deliveryRef}>
         <Services />
       </div>
