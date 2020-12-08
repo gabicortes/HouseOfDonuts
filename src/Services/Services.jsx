@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-
 import donutsOreo from "./donutsOreo.jpg";
 import donutRosa from "./donutRosa.jpg";
-
 import "./Services.css";
 
 export function Services() {
@@ -41,15 +39,15 @@ export function Services() {
             Elegí tu pedido y coordinamos para que lo tengas rápidamente en la
             comodidad de tu hogar.
           </div>
-          <button className="buttonDonut">
+          <div className="buttonDonut">
             <a
               href="https://pency.app/houseofdonuts"
               className="hyperlinkPedido"
               target="_blank"
             >
-              Pedir Online
+              PEDIR ONLINE
             </a>
-          </button>
+          </div>
         </div>
       </div>
       <div className="serviceRight">
@@ -78,7 +76,7 @@ export function Services() {
               className="hyperlinkPedido"
               target="_blank"
             >
-              Elegí tus favoritas
+              ELEGÍ TUS FAVORITAS
             </a>
           </div>
         </div>

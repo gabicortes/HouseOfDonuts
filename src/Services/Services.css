@@ -1,3 +1,43 @@
+.servicesWrapper {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+}
+
+.serviceLeft {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.serviceRight {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.serviceImageLeft {
+  width: 100%;
+}
+
+.serviceImageRight {
+  width: 100%;
+}
+
+.serviceText {
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .fullTitle {
   display: flex;
   flex-direction: row;
@@ -20,8 +60,9 @@
   background-color: black;
   color: white;
   width: fit-content;
-  font-size: 26px;
-  padding: 10px;
+  font-size: 19px;
+  padding: 14px;
+  border-radius: 10px;
 }
 
 .hyperlinkPedido:visited {

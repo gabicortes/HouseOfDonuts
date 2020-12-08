@@ -12,27 +12,10 @@
 .donut3,
 .donut6,
 .donut8 {
-  color: #613f23;
+  color: black;
   font-size: 22px;
   text-align: center;
 }
-.textDescriptionDonut {
-  padding: 20% 15%;
-  color: #613f23;
-  transition: transform 0.5s ease;
-  letter-spacing: 1.5px;
-}
-/*
-.donut1,
-.donut2,
-.donut3,
-.donut4,
-.donut5,
-.donut6,
-.donut7,
-.donut8 {
-  border: 2px solid #613f23;
-} */
 
 .donut1 {
   order: 1;
@@ -126,7 +109,7 @@
 
 .textDescriptionDonutColor {
   padding: 32% 15%;
-  color: #613f23;
+  color: black;
   transition: transform 0.5s ease;
 }
 /*
@@ -235,7 +218,8 @@
 }
 
 .textDescriptionDonut {
-  color: #613f23;
+  padding: 20% 15%;
+  color: black;
   transition: transform 0.5s ease;
   letter-spacing: 1.5px;
   font-size: 22px;

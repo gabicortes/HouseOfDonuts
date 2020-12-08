@@ -1,12 +1,11 @@
 import React from "react";
 import "./ShopDescription.css";
-import donutlocal from "./colordonut.jpg";
+import Background from "./donut_gradient.png";
 
-function ShopDescription() {
+export function ShopDescription() {
   return (
     <div className="WrapperShopDecription">
       <div className="titleNuestroLocal">Nuestro Local.</div>
-      <img className="imageShopDescription" src={donutlocal} />
       <p className="TextNuestroLocal">
         Ut est lectus, consectetur sit amet augue sed, faucibus molestie lorem.
         Proin vulputate nec libero vel bibendum. Suspendisse eu nisl blandit,
@@ -20,8 +19,7 @@ function ShopDescription() {
         ornare felis. Proin vulputate semper arcu, ut sodales ex sollicitudin
         ac.
       </p>
+      <img className="donutGradientImage" src={Background} />
     </div>
   );
 }
-
-export { ShopDescription };

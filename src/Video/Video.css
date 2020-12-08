@@ -1,0 +1,11 @@
+.videoWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.videoDonut {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid black;
+}

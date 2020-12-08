@@ -1,20 +1,20 @@
 .mapWrapper {
-  margin: 120px 5%;
+  margin: 120px 0;
   padding: 30px 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/house-of-donuts-ad052.appspot.com/o/istockphoto-1157621780-612x612.jpg?alt=media);
   background-repeat: no-repeat;
-  background-size: 1500px auto;
+  background-size: 2000px auto;
 }
 
 .map {
   padding: 10px;
   border: 1px solid white;
   height: 400px;
-  width: 60%;
+  width: 50%;
 }
 
 .textTeEsperamos {
