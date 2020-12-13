@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Map.css";
-import MapGL, { Source, Layer, Marker } from "@urbica/react-map-gl";
+import MapGL, { Source, Marker, NavigationControl } from "@urbica/react-map-gl";
 import { MapBoxKey } from "../MapBox.js";
+import { GoLocation } from "react-icons/go";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 export function Map() {
@@ -33,6 +34,7 @@ export function Map() {
           longitude={viewport.longitude}
           zoom={viewport.zoom}
           onViewportChange={setViewport}
+          scrollZoom={false}
         >
           <Source
             id="contours"
@@ -50,19 +52,20 @@ export function Map() {
               <div style={style}>📍</div>
             </a>
           </Marker>
+          <NavigationControl showCompass showZoom position="top-right" />
         </MapGL>
       </div>
       <div className="textTeEsperamos">
         TE ESPERAMOS
         <br />
-        EN CONESA 102, QUILMES
-        <a
-          target="_blank"
-          style={{ textDecoration: "none", color: "black" }}
-          href="https://www.google.com/maps/place/House+of+Donuts/@-34.7190134,-58.2642742,17z/data=!3m1!4b1!4m5!3m4!1s0x95a32fa2694c03b7:0xc2e86677655d128f!8m2!3d-34.7190922!4d-58.2621362"
-        >
-          📍
-        </a>
+        EN CONESA 102, QUILMES{"  "}
+        <GoLocation className="locationIcon">
+          <a
+            target="_blank"
+            style={{ textDecoration: "none", color: "black" }}
+            href="https://www.google.com/maps/place/House+of+Donuts/@-34.7190134,-58.2642742,17z/data=!3m1!4b1!4m5!3m4!1s0x95a32fa2694c03b7:0xc2e86677655d128f!8m2!3d-34.7190922!4d-58.2621362"
+          />
+        </GoLocation>
       </div>
     </div>
   );

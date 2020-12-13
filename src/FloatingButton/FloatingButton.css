@@ -1,0 +1,22 @@
+.floatingButtonHide,
+.floatingButtonShow {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  font-size: 28px;
+  z-index: 5;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  border-radius: 100%;
+  transition: opacity 1s, box-shadow 1s;
+  box-shadow: 2px 1px 14px dimgrey;
+}
+
+.floatingButtonHide {
+  opacity: 0;
+}
+
+.floatingButtonShow {
+  opacity: 1;
+}

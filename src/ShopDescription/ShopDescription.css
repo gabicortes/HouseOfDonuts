@@ -1,25 +1,28 @@
 .WrapperShopDecription {
   padding: 40px 0;
   margin-bottom: 40px;
+  margin-top: 90px;
 }
 
 .titleNuestroLocal {
-  font-size: 52px;
+  font-size: 100px;
   text-align: center;
-  padding-bottom: 10px;
+  font-family: "Sacramento", cursive;
 }
 
 .TextNuestroLocal {
-  padding: 30px 150px;
+  padding: 0px 250px;
   font-size: 18px;
   letter-spacing: 1.5px;
   text-align: center;
   font-weight: bold;
   line-height: 1.5;
   z-index: 1;
+  margin-bottom: 90px;
 }
 
 .donutGradientImage {
   width: 100%;
   height: auto;
+  border-bottom: 5px solid #ffa3ae;
 }

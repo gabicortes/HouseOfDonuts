@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import "./NavBar.css";
 import logo from "./Logo.png";

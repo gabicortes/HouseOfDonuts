@@ -5,7 +5,7 @@ import logo from "./Logo.png";
 
 function BrandPresentation() {
   return (
-    <div>
+    <div className="brandDescriptionWrapper">
       <img className="firstPagePhoto" src={donut} />
       <img className="firstPageLogo" src={logo} />
     </div>

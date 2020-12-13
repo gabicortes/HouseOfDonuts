@@ -1,4 +1,4 @@
-.LuxuryLine {
+/*.LuxuryLine {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -121,7 +121,7 @@
 .donut14 {
   border: 2px solid #613f23;
 }
-*/
+
 .donut9:hover ~ .donut13 .textDescriptionDonutColor {
   transform: scale(1.1);
 }
@@ -225,3 +225,4 @@
   font-size: 22px;
   text-align: center;
 }
+*/

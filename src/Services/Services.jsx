@@ -30,8 +30,7 @@ export function Services() {
         />
         <div className="serviceText">
           <div className="fullTitle">
-            <div className="firstPartTitle">Deli</div>
-            <div className="secondPartTitle">very</div>
+            <div className="firstPartTitle">Delivery</div>
           </div>
           <div className="contentServiceShipping">
             Los buenos momentos están tocando la puerta de tu casa... y traen
@@ -60,8 +59,7 @@ export function Services() {
         />
         <div className="serviceText">
           <div className="fullTitle">
-            <div className="firstPartTitle">Take</div>
-            <div className="secondPartTitle">away</div>
+            <div className="firstPartTitle">Takeaway</div>
           </div>
           <div className="contentServiceShipping">
             Estamos siempre cerca tuyo para brindarte la mejor experiencia para

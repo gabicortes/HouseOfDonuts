@@ -1,18 +1,19 @@
 .mapWrapper {
-  margin: 120px 0;
-  padding: 30px 5%;
+  padding: 140px 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/house-of-donuts-ad052.appspot.com/o/istockphoto-1157621780-612x612.jpg?alt=media);
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/house-of-donuts-ad052.appspot.com/o/IMG_9359.JPG?alt=media&);
   background-repeat: no-repeat;
-  background-size: 2000px auto;
+  background-size: 100% auto;
+  border-top: 5px solid #ffa3ae;
+  border-bottom: 5px solid #ffa3ae;
 }
 
 .map {
   padding: 10px;
-  border: 1px solid white;
+  border: 5px solid white;
   height: 400px;
   width: 50%;
 }
@@ -21,12 +22,22 @@
   width: 25%;
   font-size: 30px;
   padding: 10px;
-  border: 1px solid white;
-  background-color: #ffc759;
+  border: 5px solid white;
+  background-color: #ffa3ae;
   color: white;
   text-align: center;
 }
 
 .haceClickAca {
   font-size: 12px;
+}
+
+.locationIcon {
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .mapWrapper {
+    padding: 140px 5%;
+  }
 }

@@ -4,11 +4,12 @@ import { NavBar } from "./NavBar/NavBar";
 import { BrandPresentation } from "./BrandPresentation/BrandPresentation";
 import { ShopDescription } from "./ShopDescription/ShopDescription";
 import { Services } from "./Services/Services";
-import { Catalogue } from "./Catalogue/Catalogue";
 import { FiInstagram } from "react-icons/fi";
 import { Instagram } from "./Instagram/Instagram";
 import { Map } from "./Map/Map";
 import { Video } from "./Video/Video";
+import { Catalogue2 } from "./Catalogue2/Catalogue2";
+import { FloatingButton } from "./FloatingButton/FloatingButton";
 
 function App() {
   const nuestroLocalRef = useRef(null);
@@ -16,9 +17,11 @@ function App() {
   const ubicacionRef = useRef(null);
   const deliveryRef = useRef(null);
   const InstagramRef = useRef(null);
+  const floatingButtonRef = useRef(null)
 
   return (
     <div className="App">
+      <FloatingButton />
       <NavBar
         firstButton="Nuestro Local"
         firstButtonSectionRef={nuestroLocalRef}
@@ -39,7 +42,7 @@ function App() {
         <Video />
       </div>
       <div ref={catalogoMiRef}>
-        <Catalogue />
+        <Catalogue2 />
       </div>
       <Map />
       <div ref={deliveryRef}>
