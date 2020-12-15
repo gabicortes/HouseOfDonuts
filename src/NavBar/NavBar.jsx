@@ -33,6 +33,10 @@ function NavBar(props) {
     scrollToRef(props.fifthButtonSectionRef);
   }
 
+  function handleSixthButtonClick() {
+    scrollToRef(props.sixthButtonSectionRef);
+  }
+
   useScrollPosition((position) => {
     if (position.currPos.y < -380) {
       setImageToShow("logo");
@@ -52,6 +56,9 @@ function NavBar(props) {
         <span className="buttonNavBar" onClick={handleSecondButtonClick}>
           {props.secondButton}
         </span>
+        <span className="buttonNavBar" onClick={handleThirdButtonClick}>
+          {props.thirdButton}
+        </span>
       </div>
       <img
         className={`imageNavBar ${imageToShow}`}
@@ -59,14 +66,14 @@ function NavBar(props) {
         alt="logo"
       />
       <div className="buttonsNavBar">
-        <span className="buttonNavBar" onClick={handleThirdButtonClick}>
-          {props.thirdButton}
-        </span>
         <span className="buttonNavBar" onClick={handleFourthButtonClick}>
           {props.fourthButton}
         </span>
         <span className="buttonNavBar" onClick={handleFifthButtonClick}>
           {props.fifthButton}
+        </span>
+        <span className="buttonNavBar" onClick={handleSixthButtonClick}>
+          {props.sixthButton}
         </span>
       </div>
     </div>

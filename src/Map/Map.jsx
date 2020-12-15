@@ -56,9 +56,11 @@ export function Map() {
         </MapGL>
       </div>
       <div className="textTeEsperamos">
-        TE ESPERAMOS
+        Te esperamos
         <br />
-        EN CONESA 102, QUILMES{"  "}
+        en Conesa 102, Quilmes
+        <br />
+        <br />{" "}
         <GoLocation className="locationIcon">
           <a
             target="_blank"

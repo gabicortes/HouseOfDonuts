@@ -4,12 +4,13 @@ import { NavBar } from "./NavBar/NavBar";
 import { BrandPresentation } from "./BrandPresentation/BrandPresentation";
 import { ShopDescription } from "./ShopDescription/ShopDescription";
 import { Services } from "./Services/Services";
-import { FiInstagram } from "react-icons/fi";
 import { Instagram } from "./Instagram/Instagram";
 import { Map } from "./Map/Map";
 import { Video } from "./Video/Video";
 import { Catalogue2 } from "./Catalogue2/Catalogue2";
 import { FloatingButton } from "./FloatingButton/FloatingButton";
+import { Contact } from "./Contact/Contact";
+import { Foot } from "./Foot/Foot";
 
 function App() {
   const nuestroLocalRef = useRef(null);
@@ -17,13 +18,13 @@ function App() {
   const ubicacionRef = useRef(null);
   const deliveryRef = useRef(null);
   const InstagramRef = useRef(null);
-  const floatingButtonRef = useRef(null)
+  const contactRef = useRef(null);
 
   return (
     <div className="App">
       <FloatingButton />
       <NavBar
-        firstButton="Nuestro Local"
+        firstButton="Nosotros"
         firstButtonSectionRef={nuestroLocalRef}
         secondButton="Catálogo"
         secondButtonSectionRef={catalogoMiRef}
@@ -31,8 +32,10 @@ function App() {
         thirdButtonSectionRef={ubicacionRef}
         fourthButton="Delivery"
         fourthButtonSectionRef={deliveryRef}
-        fifthButton={<FiInstagram />}
+        fifthButton="Instagram"
         fifthButtonSectionRef={InstagramRef}
+        sixthButton="Contacto"
+        sixthButtonSectionRef={contactRef}
       />
       <BrandPresentation />
       <div ref={nuestroLocalRef}>
@@ -44,12 +47,20 @@ function App() {
       <div ref={catalogoMiRef}>
         <Catalogue2 />
       </div>
-      <Map />
+      <div ref={ubicacionRef}>
+        <Map />
+      </div>
       <div ref={deliveryRef}>
         <Services />
       </div>
       <div ref={InstagramRef}>
         <Instagram />
+      </div>
+      <div ref={contactRef}>
+        <Contact />
+      </div>
+      <div>
+        <Foot />
       </div>
     </div>
   );

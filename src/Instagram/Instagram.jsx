@@ -3,6 +3,7 @@ import "./Instagram.css";
 import axios from "axios";
 import photoProfileInstagram from "./mobilePhoneInstagramScreen.png";
 import likeInstagram from "./likeInstagram.png";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 export function Instagram() {
   const [photos, setPhotos] = useState([]);
@@ -38,6 +39,7 @@ export function Instagram() {
                 src={photo.media_url}
                 key={photo.id}
               />
+              <AiOutlineInstagram className="iconInstagramInsideImage" />
             </a>
           ))}
         </div>
