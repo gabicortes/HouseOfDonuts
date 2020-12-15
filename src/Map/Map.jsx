@@ -7,14 +7,14 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 export function Map() {
   const [viewport, setViewport] = useState({
-    latitude: -34.7190178,
-    longitude: -58.2627505,
+    latitude: -34.7189258,
+    longitude: -58.2628004,
     zoom: 16,
   });
 
   const [position, setPosition] = useState({
-    longitude: -58.2627505,
-    latitude: -34.7190178,
+    longitude: -58.2628004,
+    latitude: -34.7189258,
   });
 
   const style = {

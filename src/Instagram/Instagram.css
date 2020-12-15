@@ -1,0 +1,76 @@
+.titleSectionInstagram {
+  padding-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagramPhotosWrapper {
+  padding: 60px 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.photoInstagramProfileWrapper {
+  display: flex;
+  justify-content: center;
+  flex: 30%;
+  transition: transform 0.5s ease;
+}
+
+.photoInstagramProfileWrapper:hover {
+  cursor: pointer;
+}
+
+.photosWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 65% 1;
+}
+
+.photosOneByOne {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 36%;
+  object-fit: cover;
+}
+
+.photoInstagram {
+  height: 220px;
+  width: 220px;
+  object-fit: cover;
+  margin-bottom: 36px;
+  margin-left: 22px;
+  border-radius: 25%;
+  padding: 5px;
+  border: 2px solid black;
+  transition: transform 0.5s ease;
+}
+
+.photoProfileInstagram {
+  width: 400px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.photoInstagram:hover {
+  transform: scale(1.1);
+}
+
+.iconLikeInstagram {
+  height: 120px;
+  width: auto;
+}
+
+.titleInstagram {
+  font-size: 40px;
+}

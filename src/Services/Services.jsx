@@ -11,7 +11,7 @@ export function Services() {
     setPositionY(position.currPos.y);
   });
 
-  let imageTranslateX = positionY / 5 + 800;
+  let imageTranslateX = positionY / 5 + 900;
   if (imageTranslateX < -125) {
     imageTranslateX = -125;
   } else if (imageTranslateX > 125) {

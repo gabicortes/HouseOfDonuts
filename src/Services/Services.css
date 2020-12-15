@@ -1,6 +1,6 @@
 .servicesWrapper {
   width: 100%;
-  height: 700px;
+  height: 600px;
   display: flex;
   flex-direction: row;
 }
@@ -20,11 +20,11 @@
 }
 
 .serviceImageLeft {
-  width: 100%;
+  width: 120%;
 }
 
 .serviceImageRight {
-  width: 100%;
+  width: 120%;
 }
 
 .serviceText {
@@ -35,7 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .fullTitle {
@@ -48,8 +48,8 @@
 }
 
 .hyperlinkPedido {
-  color: white;
   text-decoration: none;
+  color: inherit;
 }
 
 .buttonDonut {
@@ -60,6 +60,7 @@
   font-size: 19px;
   padding: 14px;
   border-radius: 10px;
+  border: 2px solid white;
 }
 
 .hyperlinkPedido:visited {
@@ -78,9 +79,6 @@
   cursor: pointer;
   background-color: white;
   color: black;
-  border: 2px solid black;
+  border: 3px solid black;
 }
 
-.hyperlinkPedido:hover {
-  color: black;
-}
