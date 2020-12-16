@@ -1,4 +1,5 @@
 .wrapperCatalogue {
+  padding: 0 0 60px;
   background-image: linear-gradient(#2c2d2f, #73767a);
   color: white;
   padding-bottom: 40px;
@@ -19,7 +20,7 @@
 }
 
 .textCatalogue {
-  padding: 7px 25% 0px;
+  padding: 7px 25% 50px;
   text-align: center;
   letter-spacing: 1.5px;
   font-size: 19px;
@@ -37,6 +38,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .donutLuxury {
@@ -50,9 +53,13 @@
 }
 
 .titleEachLineDonut {
-  padding: 40px 0;
+  border: 1px solid white;
+  border-radius: 10%;
+  padding: 20px 8px;
   font-size: 45px;
   font-weight: bold;
+  background: grey;
+  background-size: 100% 100%;
 }
 
 .colorfulDonutsAllImages {
@@ -60,6 +67,8 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .cakeAndPocketAllImages {
@@ -67,6 +76,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .firstRowDonutLuxury {

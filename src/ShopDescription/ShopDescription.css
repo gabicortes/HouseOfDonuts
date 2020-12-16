@@ -1,5 +1,5 @@
 .WrapperShopDecription {
-  padding: 40px 0;
+  padding: 0 0 40px;
   margin-bottom: 40px;
   margin-top: 90px;
 }
@@ -11,18 +11,38 @@
 }
 
 .TextNuestroLocal {
-  padding: 0px 250px;
   font-size: 18px;
   letter-spacing: 1.5px;
   text-align: center;
   font-weight: bold;
   line-height: 1.5;
   z-index: 1;
-  margin-bottom: 90px;
+  flex-basis: 50%;
+  padding-right: 3%;
+}
+
+.imageFrontShop {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border: 1px solid black;
 }
 
 .donutGradientImage {
   width: 100%;
   height: auto;
   border-bottom: 5px solid #ffa3ae;
+}
+
+.contentTextAndPhoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 5% 0;
+}
+
+.wrapperImageShop {
+  flex-basis: 50%;
+  padding-left: 3%;
 }

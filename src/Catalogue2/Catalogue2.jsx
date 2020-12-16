@@ -1,6 +1,10 @@
 import React from "react";
 import "./Catalogue2.css";
 import donut from "./donut.png";
+import donutCake from "./cake-with-name.png";
+import bonobon from "./bon-o-bon.png";
+import ferreroRocher from "./ferrero-rocher.png";
+import oreo from "./oreo.png";
 
 export function Catalogue2() {
   return (
@@ -17,24 +21,24 @@ export function Catalogue2() {
         </div>
       </div>
       <div className="donutsDifferentCategoriesWrapper">
-        <div className="titleEachLineDonut">- Luxury -</div>
+        <div className="titleEachLineDonut">Luxury</div>
         <div className="LuxuryDonutsAllImages">
           <div className="firstRowDonutLuxury">
             <div>
               <div>
                 <img
                   className="donutImageCatalogue donutLuxury luxury1"
-                  src={donut}
+                  src={bonobon}
                 />
               </div>
             </div>
             <img
               className="donutImageCatalogue donutLuxury luxury2"
-              src={donut}
+              src={ferreroRocher}
             />
             <img
               className="donutImageCatalogue donutLuxury luxury3"
-              src={donut}
+              src={oreo}
             />
             <img
               className="donutImageCatalogue donutLuxury luxury4"
@@ -60,7 +64,7 @@ export function Catalogue2() {
             />
           </div>
         </div>
-        <div className="titleEachLineDonut">- Colorful -</div>
+        <div className="titleEachLineDonut">Colorful</div>
         <div className="colorfulDonutsAllImages">
           <img
             className="donutImageCatalogue donutColorful colorful1"
@@ -75,9 +79,9 @@ export function Catalogue2() {
             src={donut}
           />
         </div>
-        <div className="titleEachLineDonut">- Cake & Pocket -</div>
+        <div className="titleEachLineDonut">Cake & Pocket</div>
         <div className="cakeAndPocketAllImages">
-          <img className="donutImageCatalogue cake" src={donut} />
+          <img className="donutImageCatalogue cake" src={donutCake} />
           <img className="donutImageCatalogue pocket" src={donut} />
         </div>
       </div>
