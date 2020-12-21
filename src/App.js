@@ -23,20 +23,6 @@ function App() {
   return (
     <div className="App">
       <FloatingButton />
-      <NavBar
-        firstButton="Nosotros"
-        firstButtonSectionRef={nuestroLocalRef}
-        secondButton="Catálogo"
-        secondButtonSectionRef={catalogoMiRef}
-        thirdButton="Ubicación"
-        thirdButtonSectionRef={ubicacionRef}
-        fourthButton="Delivery"
-        fourthButtonSectionRef={deliveryRef}
-        fifthButton="Instagram"
-        fifthButtonSectionRef={InstagramRef}
-        sixthButton="Contacto"
-        sixthButtonSectionRef={contactRef}
-      />
       <BrandPresentation />
       <div ref={nuestroLocalRef}>
         <ShopDescription />
@@ -59,9 +45,24 @@ function App() {
       <div ref={contactRef}>
         <Contact />
       </div>
+
       <div>
         <Foot />
       </div>
+      <NavBar
+        firstButton="Nosotros"
+        firstButtonSectionRef={nuestroLocalRef}
+        secondButton="Catálogo"
+        secondButtonSectionRef={catalogoMiRef}
+        thirdButton="Ubicación"
+        thirdButtonSectionRef={ubicacionRef}
+        fourthButton="Delivery"
+        fourthButtonSectionRef={deliveryRef}
+        fifthButton="Instagram"
+        fifthButtonSectionRef={InstagramRef}
+        sixthButton="Contacto"
+        sixthButtonSectionRef={contactRef}
+      />
     </div>
   );
 }

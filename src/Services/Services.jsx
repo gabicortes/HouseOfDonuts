@@ -11,21 +11,37 @@ export function Services() {
     setPositionY(position.currPos.y);
   });
 
-  let imageTranslateX = positionY / 5 + 900;
+  let imageTranslateX = positionY / 5 + 1000;
   if (imageTranslateX < -125) {
     imageTranslateX = -125;
   } else if (imageTranslateX > 125) {
     imageTranslateX = 125;
   }
 
+  let imageTranslateXsmallScreen = positionY / 5 + 820;
+  if (imageTranslateXsmallScreen < -125) {
+    imageTranslateXsmallScreen = -125;
+  } else if (imageTranslateXsmallScreen > 125) {
+    imageTranslateXsmallScreen = 125;
+  }
+
+  console.log(positionY);
+
   return (
     <div className="servicesWrapper">
       <div className="serviceLeft">
         <img
-          className="serviceImageLeft"
+          className="serviceImageLeft "
           src={donutRosa}
           style={{
             transform: `translateX(${imageTranslateX}px) scale(1.4)`,
+          }}
+        />
+        <img
+          className="serviceImageLeftSmallScreen"
+          src={donutRosa}
+          style={{
+            transform: `translateX(${imageTranslateXsmallScreen}px) scale(1.4)`,
           }}
         />
         <div className="serviceText">
@@ -57,6 +73,13 @@ export function Services() {
             transform: `translateX(${-imageTranslateX}px) scale(1.4)`,
           }}
         />
+        <img
+          className="serviceImageRightSmallScreen"
+          src={donutsOreo}
+          style={{
+            transform: `translateX(${-imageTranslateXsmallScreen}px) scale(1.4)`,
+          }}
+        />
         <div className="serviceText">
           <div className="fullTitle">
             <div className="firstPartTitle">Takeaway</div>
@@ -66,7 +89,7 @@ export function Services() {
             vos y tu familia.
             <br />
             Hace tu pedido y retiralo <br />
-            en nuestro local del barrio de Quilmes.
+            en nuestro local de Conesa 102, Quilmes.
           </div>
           <div className="buttonDonut">
             <a

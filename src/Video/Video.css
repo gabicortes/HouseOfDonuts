@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
-  
 }
 
 .videoDonut {
@@ -10,4 +9,16 @@
   height: auto;
   padding: 10px;
   border: 1px solid #2c2d2f;
+}
+
+@media (max-width: 425px) {
+  .videoDonut {
+    width: auto;
+    height: 280px;
+    padding: 5px;
+    overflow: hidden;
+  }
+  .videoWrapper {
+    padding-bottom: 40px;
+  }
 }

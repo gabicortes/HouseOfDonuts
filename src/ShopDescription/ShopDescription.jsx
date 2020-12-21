@@ -23,11 +23,9 @@ export function ShopDescription() {
           <br />
           Pensaste en tomar unos mates? Tenemos tus donas preparadas! Ah, pero
           preferís la merienda? También aplica! Tenés una fiesta? Querés llevar
-          el postre? Te estamos esperando, apúrate que están recién cocinadas :)
+          el postre? Apurate que están recién cocinadas :)
         </div>
-        <div className="wrapperImageShop">
-          <img className="imageFrontShop" src={shopFront} />
-        </div>
+        <img className="imageFrontShop wrapperImageShop" src={shopFront} />
       </div>
       <img className="donutGradientImage" src={Background} />
     </div>

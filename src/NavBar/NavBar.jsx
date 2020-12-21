@@ -3,6 +3,7 @@ import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import "./NavBar.css";
 import logo from "./Logo.png";
 import donuts from "./donuts.png";
+import { TiThMenu } from "react-icons/ti";
 
 const scrollToRef = (ref) =>
   window.scrollTo({
@@ -12,6 +13,8 @@ const scrollToRef = (ref) =>
   });
 
 function NavBar(props) {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
   const [imageToShow, setImageToShow] = useState("donuts");
 
   function handleFirstButtonClick() {
@@ -47,35 +50,70 @@ function NavBar(props) {
 
   const imageNavBar = imageToShow === "donuts" ? donuts : logo;
 
+  function triggerHamburgerMenu() {
+    setMenuIsOpen((prevValue) => !prevValue);
+  }
+
+  let menu = (
+    <div className="burgerMenu">
+      <div className="buttonBurgerNavBar" onClick={handleFirstButtonClick}>
+        {props.firstButton}
+      </div>
+      <div className="buttonBurgerNavBar" onClick={handleSecondButtonClick}>
+        {props.secondButton}
+      </div>
+      <div className="buttonBurgerNavBar" onClick={handleThirdButtonClick}>
+        {props.thirdButton}
+      </div>
+      <div className="buttonBurgerNavBar" onClick={handleFourthButtonClick}>
+        {props.fourthButton}
+      </div>
+      <div className="buttonBurgerNavBar" onClick={handleFifthButtonClick}>
+        {props.fifthButton}
+      </div>
+      <div className="buttonBurgerNavBar" onClick={handleSixthButtonClick}>
+        {props.sixthButton}
+      </div>
+    </div>
+  );
+
+  const menuWrapperClassname = menuIsOpen
+    ? "openMenuWrapper"
+    : "closedMenuWrapper";
+
   return (
-    <div id="navbar" className="navBarDiv">
-      <div className="buttonsNavBar">
-        <span className="buttonNavBar" onClick={handleFirstButtonClick}>
-          {props.firstButton}
-        </span>
-        <span className="buttonNavBar" onClick={handleSecondButtonClick}>
-          {props.secondButton}
-        </span>
-        <span className="buttonNavBar" onClick={handleThirdButtonClick}>
-          {props.thirdButton}
-        </span>
+    <div>
+      <div id="navbar" className="navBarDiv">
+        <div className="buttonsNavBar">
+          <span className="buttonNavBar" onClick={handleFirstButtonClick}>
+            {props.firstButton}
+          </span>
+          <span className="buttonNavBar" onClick={handleSecondButtonClick}>
+            {props.secondButton}
+          </span>
+          <span className="buttonNavBar" onClick={handleThirdButtonClick}>
+            {props.thirdButton}
+          </span>
+        </div>
+        <img
+          className={`imageNavBar ${imageToShow}`}
+          src={imageNavBar}
+          alt="logo"
+        />
+        <div className="buttonsNavBar">
+          <span className="buttonNavBar" onClick={handleFourthButtonClick}>
+            {props.fourthButton}
+          </span>
+          <span className="buttonNavBar" onClick={handleFifthButtonClick}>
+            {props.fifthButton}
+          </span>
+          <span className="buttonNavBar" onClick={handleSixthButtonClick}>
+            {props.sixthButton}
+          </span>
+        </div>
+        <TiThMenu className="burgerMenuButton" onClick={triggerHamburgerMenu} />
       </div>
-      <img
-        className={`imageNavBar ${imageToShow}`}
-        src={imageNavBar}
-        alt="logo"
-      />
-      <div className="buttonsNavBar">
-        <span className="buttonNavBar" onClick={handleFourthButtonClick}>
-          {props.fourthButton}
-        </span>
-        <span className="buttonNavBar" onClick={handleFifthButtonClick}>
-          {props.fifthButton}
-        </span>
-        <span className="buttonNavBar" onClick={handleSixthButtonClick}>
-          {props.sixthButton}
-        </span>
-      </div>
+      <div className={menuWrapperClassname}>{menu}</div>
     </div>
   );
 }

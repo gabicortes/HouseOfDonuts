@@ -6,34 +6,28 @@
   justify-content: space-between;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/house-of-donuts-ad052.appspot.com/o/IMG_9359.JPG?alt=media&);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   border-top: 5px solid #ffa3ae;
   border-bottom: 5px solid #ffa3ae;
 }
 
 .map {
-  padding: 5px;
-  border-radius: 5%;
-  background-color: #ffa3ae;
-  border: 5px solid white;
+  border-radius: 15px;
+  border: 2px solid white;
   height: 400px;
   width: 50%;
+  overflow: hidden;
 }
 
-.textTeEsperamos {
-  width: 220px;
-  height: 220px;
+.WraptextTeEsperamos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  padding: 10px;
-  border-radius: 25%;
-  border: 5px solid white;
-  background-color: #ffa3ae;
-  color: white;
-  text-align: center;
+  padding: 7px;
+  height: 313px;
+  width: 310px;
+  font-size: 24px;
 }
 
 .haceClickAca {
@@ -44,8 +38,132 @@
   cursor: pointer;
 }
 
-@media (min-width: 1440px) {
+.eachRectangule1 {
+  height: 40%;
+  margin-bottom: 5%;
+  background-color: #46484a;
+}
+.eachRectangule2 {
+  height: 25%;
+  margin-bottom: 5%;
+  background-color: #6e7175;
+}
+.eachRectangule3 {
+  height: 25%;
+  background-color: #ffa3ae;
+}
+
+.eachRectangule1,
+.eachRectangule2,
+.eachRectangule3 {
+  border-radius: 15px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  transition: transform 1s ease;
+  cursor: default;
+}
+
+.eachRectangule1:hover,
+.eachRectangule3:hover {
+  transform: translateX(30px);
+}
+
+.eachRectangule2:hover {
+  transform: translateX(-30px);
+}
+
+.adressOnSmallScreen {
+  display: none;
+}
+
+.textClickToShowTheMap {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .WraptextTeEsperamos {
+    height: 280px;
+    width: 194px;
+    font-size: 21px;
+  }
+  .map {
+    width: 64%;
+  }
   .mapWrapper {
-    padding: 140px 5%;
+    padding: 100px 5%;
+  }
+}
+
+@media (max-width: 425px) {
+  .mapWrapper {
+    flex-direction: column;
+    background-size: 147% auto;
+    overflow: hidden;
+    padding: 30px 5%;
+  }
+  .WraptextTeEsperamos {
+    display: none;
+  }
+  .map {
+    display: none;
+  }
+  .adressOnSmallScreen {
+    display: block;
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin: 51px 5px;
+    font-size: 29px;
+    cursor: pointer;
+  }
+  .noMapShow {
+    display: none;
+  }
+  .mapShow {
+    display: flex;
+    padding: 0;
+    height: 300px;
+  }
+  .textClickToShowTheMap {
+    display: block;
+    color: white;
+    border-radius: 100%;
+    padding: 37px 19px;
+    background: #bf5d58;
+    text-align: center;
+    font-size: 20px;
+    margin: 30px;
+    animation: 1.5s shake infinite alternate;
+    border: 1px solid white;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: skewX(-15deg);
+    }
+    5% {
+      transform: skewX(15deg);
+    }
+    10% {
+      transform: skewX(-15deg);
+    }
+    15% {
+      transform: skewX(15deg);
+    }
+    20% {
+      transform: skewX(0deg);
+    }
+    100% {
+      transform: skewX(0deg);
+    }
+  }
+
+  .mapGLclassname {
+    width: 100%;
   }
 }

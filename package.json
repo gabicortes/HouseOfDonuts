@@ -21,6 +21,7 @@
     "react-icons": "^4.1.0",
     "react-scripts": "4.0.1",
     "react-scroll-parallax": "^2.3.5",
+    "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
     "video-react": "^0.14.1",
     "web-vitals": "^0.2.4"

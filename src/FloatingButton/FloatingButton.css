@@ -25,3 +25,11 @@
 .floatingButtonShow:hover {
   opacity: 1;
 }
+
+@media (max-width: 1024px) {
+  .floatingButtonHide,
+  .floatingButtonShow {
+    font-size: 23px;
+    padding: 13px;
+  }
+}

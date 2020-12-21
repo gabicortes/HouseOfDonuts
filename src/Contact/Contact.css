@@ -31,4 +31,20 @@
   text-decoration: none;
 }
 
-
+@media (max-width: 425px) {
+  .imageLogoContact {
+    height: 58px;
+    width: auto;
+  }
+  .SVGicon {
+    height: 20px;
+    width: auto;
+    color: black;
+  }
+  .linkToGoToContact {
+    padding: 0 0 0 10px;
+  }
+  .wrapperContact {
+    padding: 30px 4%;
+  }
+}

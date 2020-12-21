@@ -16,8 +16,6 @@
   text-align: center;
   font-weight: bold;
   line-height: 1.5;
-  z-index: 1;
-  flex-basis: 50%;
   padding-right: 3%;
 }
 
@@ -45,4 +43,42 @@
 .wrapperImageShop {
   flex-basis: 50%;
   padding-left: 3%;
+}
+
+@media (max-width: 800px) {
+  .WrapperShopDecription {
+    margin-top: 45px;
+    padding-left: 0;
+  }
+  .contentTextAndPhoto {
+    flex-direction: column-reverse;
+  }
+  .imageFrontShop {
+    width: 80%;
+  }
+  .TextNuestroLocal {
+    padding-top: 25px;
+    padding-right: 0;
+    font-size: 16px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .titleNuestroLocal {
+    font-size: 54px;
+  }
+  .TextNuestroLocal {
+    padding-top: 25px;
+    padding-right: 0;
+    font-size: 13px;
+    width: 80%;
+  }
+  .WrapperShopDecription {
+    margin-top: 33px;
+    padding: 0;
+  }
+  .contentTextAndPhoto {
+    padding: 26px 12% 0;
+  }
 }

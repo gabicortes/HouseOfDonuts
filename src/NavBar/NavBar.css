@@ -36,3 +36,72 @@
 .buttonNavBar:hover {
   cursor: pointer;
 }
+
+.burgerMenuButton {
+  display: none;
+  width: 35px;
+  height: 45px;
+  margin-right: 35px;
+}
+
+.burgerMenu {
+  position: fixed;
+  top: 100px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  opacity: 1;
+  z-index: 5;
+}
+
+.buttonBurgerNavBar {
+  cursor: pointer;
+  padding: 13px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.openMenuWrapper {
+  opacity: 1;
+  transition: all 1s ease;
+  position: fixed;
+  left: 50vw;
+  top: 0px;
+}
+
+.closedMenuWrapper {
+  opacity: 0;
+  transition: all 1s ease;
+  position: fixed;
+  left: 100vw;
+  top: 0px;
+}
+
+@media (max-width: 800px) {
+  .buttonsNavBar {
+    display: none;
+  }
+
+  .burgerMenuButton {
+    display: block;
+  }
+
+  .burgerMenu {
+    display: flex;
+  }
+
+  .navBarDiv {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .imageNavBar {
+    height: 60%;
+  }
+  .buttonBurgerNavBar {
+    padding: 16px 15px;
+  }
+}

@@ -83,3 +83,53 @@
 .photoInstagram:hover ~ .iconInstagramInsideImage {
   color: white;
 }
+
+@media (max-width: 1024px) {
+  .photoProfileInstagram {
+    width: 300px;
+  }
+  .photoInstagram {
+    height: 180px;
+    width: 180px;
+  }
+  .photosOneByOne {
+    margin: 18px -1px;
+  }
+}
+
+@media (max-width: 800px) {
+  .photoProfileInstagram {
+    width: 239px;
+  }
+  .photoInstagram {
+    height: 140px;
+    width: 140px;
+  }
+  .photosWrapper {
+    width: 65%;
+  }
+}
+
+@media (max-width: 425px) {
+  .titleInstagram {
+    font-size: 40px;
+  }
+  .iconLikeInstagram {
+    height: 100px;
+    transform: scale(0.55) rotate(23deg) translate(219px, -151px);
+  }
+  .instagramPhotosWrapper {
+    padding: 32px;
+  }
+  .photosWrapper {
+    width: 100%;
+  }
+  .photoInstagram {
+    height: 120px;
+    width: 120px;
+  }
+  .photoProfileInstagram {
+    height: 380px;
+    width: auto;
+  }
+}
