@@ -8,6 +8,7 @@ function BrandPresentation() {
     <div className="brandDescriptionWrapper">
       <img className="firstPagePhoto" src={donut} />
       <img className="firstPageLogo" src={logo} />
+
     </div>
   );
 }

@@ -112,6 +112,7 @@
   .map {
     display: none;
   }
+
   .adressOnSmallScreen {
     display: block;
     text-align: center;
@@ -128,6 +129,8 @@
     display: flex;
     padding: 0;
     height: 300px;
+    width: auto;
+    margin: 12.5px 12.5px;
   }
   .textClickToShowTheMap {
     display: block;

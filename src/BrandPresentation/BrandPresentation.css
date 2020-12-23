@@ -10,7 +10,11 @@
   padding-top: 100px;
   border-bottom: 5px solid #ffa3ae;
 }
-
+.containerButtonAndLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .firstPageLogo {
   position: absolute;
   width: 30%;

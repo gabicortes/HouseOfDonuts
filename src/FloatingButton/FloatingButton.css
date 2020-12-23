@@ -33,3 +33,10 @@
     padding: 13px;
   }
 }
+
+@media (max-width: 320px) {
+  .floatingButtonShow {
+    font-size: 19px;
+    padding: 9px;
+  }
+}

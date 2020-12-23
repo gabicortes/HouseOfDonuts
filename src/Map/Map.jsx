@@ -10,7 +10,7 @@ export function Map() {
   const [viewport, setViewport] = useState({
     latitude: -34.7190178,
     longitude: -58.2642742,
-    zoom: 14,
+    zoom: 15,
   });
 
   const [position, setPosition] = useState({

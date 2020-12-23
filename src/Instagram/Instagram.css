@@ -51,8 +51,8 @@
 }
 
 .photoProfileInstagram {
-  width: 400px;
-  height: auto;
+  width: auto;
+  height: 572px;
   transition: transform 0.5s ease;
 }
 
@@ -131,5 +131,18 @@
   .photoProfileInstagram {
     height: 380px;
     width: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .titleInstagram {
+    font-size: 36px;
+  }
+  .iconLikeInstagram {
+    transform: scale(0.5) rotate(23deg) translate(195px, -136px);
+  }
+  .photoInstagram {
+    height: 90px;
+    width: 90px;
   }
 }

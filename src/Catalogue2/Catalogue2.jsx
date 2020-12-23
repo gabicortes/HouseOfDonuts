@@ -14,7 +14,7 @@ export function Catalogue2() {
         <div className="textCatalogue">
           En House of Donuts, nunca hacemos las cosas de manera aburrida ni lo
           haremos. Nuestras donas son "estilo pastel": ligeras, húmedas y
-          ligeramente crujientes. Están diseñados a medida y decoradas con los
+          sumamente esponjosas. Están diseñadas a medida y decoradas con los
           ingredientes y salsas más frescos. <br />
           <br />
           ¡Nuestras donuts son amor a primer bocado!

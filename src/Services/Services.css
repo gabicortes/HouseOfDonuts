@@ -95,7 +95,7 @@
 @media (min-width: 1024px) {
   .serviceImageLeft,
   .serviceImageRight {
-    width: 100%;
+    width: 120%;
     height: 100%;
   }
 }
@@ -111,9 +111,11 @@
   }
   .serviceImageLeft {
     height: 89%;
+    width: 160%;
   }
   .serviceImageRight {
     height: 89%;
+    width: 150%;
   }
 }
 
@@ -162,5 +164,15 @@
     display: block;
     width: 120%;
     filter: brightness(50%);
+  }
+}
+
+@media (max-width: 320px) {
+  .serviceImageLeftSmallScreen {
+    width: 150%;
+    transform: translateX(85px);
+  }
+  .fullTitle {
+    font-size: 84px;
   }
 }

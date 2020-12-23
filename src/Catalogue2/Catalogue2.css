@@ -47,8 +47,8 @@
 }
 
 .donutImageCatalogue {
-  max-width: 175px;
-  height: auto;
+  width: 140px;
+  height: 140px;
   flex-basis: 25%;
   transition: transform 0.5s ease;
 }
@@ -105,6 +105,9 @@
   .textCatalogue {
     padding: 7px 16% 50px;
   }
+  .donutsDifferentCategoriesWrapper {
+    padding: 30px 10%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -137,5 +140,22 @@
   }
   .LuxuryDonutsAllImages {
     padding-top: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .titleEachLineDonut {
+    font-size: 28px;
+    padding: 9px 14px;
+  }
+  .donutImageCatalogue {
+    height: 104px;
+  }
+  .titleCatalogue {
+    font-size: 54px;
+  }
+  .textCatalogue {
+    font-size: 15px;
+    letter-spacing: 3px;
   }
 }

@@ -49,7 +49,7 @@ export function Services() {
             <div className="firstPartTitle">Delivery</div>
           </div>
           <div className="contentServiceShipping">
-            Los buenos momentos están tocando la puerta de tu casa... y traen
+            Los buenos momentos están tocando la puerta de tu casa... ¡y traen
             donuts! <br />
             Elegí tu pedido y coordinamos para que lo tengas rápidamente en la
             comodidad de tu hogar.

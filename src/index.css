@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  scroll-behavior: smooth;
   font-family: "Karla", sans-serif;
 
   -webkit-font-smoothing: antialiased;

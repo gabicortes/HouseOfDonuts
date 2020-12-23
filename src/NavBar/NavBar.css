@@ -79,7 +79,48 @@
   top: 0px;
 }
 
+.buttonBuyDonuts {
+  background-color: black;
+  color: white;
+  font-size: 19px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid white;
+  z-index: 5;
+  position: fixed;
+  top: 24px;
+  right: 7px;
+}
+
+.buttonBuyDonuts:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+}
+
+.linkComprar {
+  text-decoration: none;
+  color: black;
+}
+
+.linkComprar:hover {
+  text-decoration: none;
+}
+.linkComprar:visited {
+  text-decoration: none;
+  color: black;
+}
+.buttonBuyDonutsonBurgerMenu {
+  display: none;
+}
+
 @media (max-width: 800px) {
+  .buttonBuyDonuts {
+    top: 24px;
+    right: 86px;
+  }
+
   .buttonsNavBar {
     display: none;
   }
@@ -98,6 +139,12 @@
   }
 }
 @media (max-width: 425px) {
+  .buttonBuyDonuts {
+    font-size: 14px;
+    padding: 9px;
+    top: 30px;
+    right: 81px;
+  }
   .imageNavBar {
     height: 60%;
   }

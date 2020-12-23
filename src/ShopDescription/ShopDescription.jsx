@@ -9,9 +9,9 @@ export function ShopDescription() {
       <div className="titleNuestroLocal">Nuestro Local.</div>
       <div className="contentTextAndPhoto">
         <div className="TextNuestroLocal">
-          House of Donuts nace en el año 2018 cuando soñábamos con un lugar que
-          conecte personas con sabores únicos en el lugar que nos vio crecer: el
-          barrio de Quilmes. <br />
+          House of Donuts nace en el año 2018 cuando soñábamos con un espacio
+          que conecte personas con sabores únicos en el lugar que nos vio
+          crecer: el barrio de Quilmes. <br />
           <br />
           Cada una de nuestras donuts está hecha de manera artesanal, con una
           masa completamente suave por dentro y lo suficientemente crocante por
@@ -21,9 +21,7 @@ export function ShopDescription() {
           que se deleita de solo pensar en probar Oreo, Bon o Bon, dulce de
           leche, y más… <br />
           <br />
-          Pensaste en tomar unos mates? Tenemos tus donas preparadas! Ah, pero
-          preferís la merienda? También aplica! Tenés una fiesta? Querés llevar
-          el postre? Apurate que están recién cocinadas :)
+          Apurate que están recién cocinadas :)
         </div>
         <img className="imageFrontShop wrapperImageShop" src={shopFront} />
       </div>

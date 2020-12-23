@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import "./NavBar.css";
 import logo from "./Logo.png";
-import donuts from "./donuts.png";
+import donuts from "./Dona-09.png";
 import { TiThMenu } from "react-icons/ti";
 
 const scrollToRef = (ref) =>
@@ -56,6 +56,9 @@ function NavBar(props) {
 
   let menu = (
     <div className="burgerMenu">
+      <a className="linkComprar" href="https://pency.app/houseofdonuts">
+        <div className="buttonBuyDonutsonBurgerMenu">COMPRAR </div>
+      </a>
       <div className="buttonBurgerNavBar" onClick={handleFirstButtonClick}>
         {props.firstButton}
       </div>
@@ -114,6 +117,10 @@ function NavBar(props) {
         <TiThMenu className="burgerMenuButton" onClick={triggerHamburgerMenu} />
       </div>
       <div className={menuWrapperClassname}>{menu}</div>
+
+      <a className="linkComprar" href="https://pency.app/houseofdonuts">
+        <div className="buttonBuyDonuts">COMPRAR </div>
+      </a>
     </div>
   );
 }

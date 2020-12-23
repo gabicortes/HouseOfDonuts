@@ -11,14 +11,35 @@
   border: 1px solid #2c2d2f;
 }
 
+@media (max-width: 800px) {
+  .videoDonut {
+    width: 80%;
+    padding: 1px;
+  }
+  .videoWrapper {
+    padding-bottom: 40px;
+  }
+}
+
 @media (max-width: 425px) {
   .videoDonut {
+    display: flex;
+    align-items: center;
     width: auto;
     height: 280px;
-    padding: 5px;
+    padding: 1px;
     overflow: hidden;
   }
   .videoWrapper {
     padding-bottom: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .videoDonut {
+    width: auto;
+    height: 210px;
+  }
+  .videoWrapper {
+    padding-bottom: 20px;
   }
 }
