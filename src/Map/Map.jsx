@@ -67,8 +67,10 @@ export function Map() {
             La ubicación geográfica <br />
             de la felicidad
           </div>
-          <div className="eachRectangule2">Te estamos esperando!</div>
-          <div className="eachRectangule3">Conesa 102, Quilmes</div>
+          <div className="eachRectangule2">Conesa 102, Quilmes</div>
+          <div className="eachRectangule3">
+            Jueves a Domingo <br />9 a 12hs & 15 a 19.30hs
+          </div>
         </div>
         <div className="textClickToShowTheMap" onClick={showMap}>
           Click para

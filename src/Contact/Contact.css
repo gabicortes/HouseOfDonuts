@@ -5,6 +5,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-top: 5px solid #fae714;
+  border-bottom: 5px solid #fae714;
 }
 
 .vectorsToContact {

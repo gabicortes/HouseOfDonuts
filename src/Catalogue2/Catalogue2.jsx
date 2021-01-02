@@ -1,10 +1,12 @@
 import React from "react";
 import "./Catalogue2.css";
-import donut from "./donut.png";
-import donutCake from "./cake-with-name.png";
-import bonobon from "./bon-o-bon.png";
-import ferreroRocher from "./ferrero-rocher.png";
-import oreo from "./oreo.png";
+import kitKat from "./kitKat.JPG";
+import oreoDonut from "./oreo.jpg";
+import chocolina from "./chocolina.JPG";
+import cabsha from "./cabsha.JPG";
+import colorfulDonut from "./colorful.JPG";
+import pocketDonut from "./pocket.JPG";
+import cakeDonut from "./cakeDonut.JPG";
 
 export function Catalogue2() {
   return (
@@ -24,28 +26,25 @@ export function Catalogue2() {
         <div className="titleEachLineDonut">Luxury</div>
         <div className="LuxuryDonutsAllImages">
           <div className="firstRowDonutLuxury">
-            <div>
-              <div>
-                <img
-                  className="donutImageCatalogue donutLuxury luxury1"
-                  src={bonobon}
-                />
-              </div>
-            </div>
+            <img
+              className="donutImageCatalogue donutLuxury luxury1"
+              src={kitKat}
+            />
+
             <img
               className="donutImageCatalogue donutLuxury luxury2"
-              src={ferreroRocher}
+              src={oreoDonut}
             />
             <img
               className="donutImageCatalogue donutLuxury luxury3"
-              src={oreo}
+              src={chocolina}
             />
             <img
               className="donutImageCatalogue donutLuxury luxury4"
-              src={donut}
+              src={cabsha}
             />
           </div>
-          <div className="firstRowDonutLuxury">
+          {/* <div className="firstRowDonutLuxury">
             <img
               className="donutImageCatalogue donutLuxury luxury5"
               src={donut}
@@ -62,27 +61,27 @@ export function Catalogue2() {
               className="donutImageCatalogue donutLuxury luxury8"
               src={donut}
             />
-          </div>
+          </div>*/}
         </div>
         <div className="titleEachLineDonut">Colorful</div>
         <div className="colorfulDonutsAllImages">
-          <img
+          {/*  <img
             className="donutImageCatalogue donutColorful colorful1"
             src={donut}
           />
           <img
             className="donutImageCatalogue donutColorful colorful2"
             src={donut}
-          />
+      />*/}
           <img
             className="donutImageCatalogue donutColorful colorful3"
-            src={donut}
+            src={colorfulDonut}
           />
         </div>
         <div className="titleEachLineDonut">Cake & Pocket</div>
         <div className="cakeAndPocketAllImages">
-          <img className="donutImageCatalogue cake" src={donutCake} />
-          <img className="donutImageCatalogue pocket" src={donut} />
+          <img className="donutImageCatalogue cake" src={cakeDonut} />
+          <img className="donutImageCatalogue pocket" src={pocketDonut} />
         </div>
       </div>
     </div>
