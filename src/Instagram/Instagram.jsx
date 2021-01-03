@@ -17,6 +17,41 @@ export function Instagram() {
     setPhotos(photosToShow);
   }, []);
 
+  function renderPhoto(photo) {
+    console.log(photo);
+
+    var isSafari =
+      /constructor/i.test(window.HTMLElement) ||
+      (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+      })(
+        !window["safari"] ||
+          (typeof safari !== "undefined" && window["safari"].pushNotification)
+      );
+
+    let mediaTag;
+    if (photo.media_url.includes("video") && !isSafari) {
+      mediaTag = (
+        <video
+          className="photoInstagram"
+          src={photo.media_url}
+          key={photo.id}
+        />
+      );
+    } else {
+      mediaTag = (
+        <img className="photoInstagram" src={photo.media_url} key={photo.id} />
+      );
+    }
+
+    return (
+      <a className="photosOneByOne" href={photo.permalink} target="_blank">
+        {mediaTag}
+        <AiOutlineInstagram className="iconInstagramInsideImage" />
+      </a>
+    );
+  }
+
   return (
     <div>
       <div className="titleSectionInstagram">
@@ -28,20 +63,7 @@ export function Instagram() {
           <img className="photoProfileInstagram" src={photoProfileInstagram} />
         </div>
         <div className="photosWrapper">
-          {photos.map((photo) => (
-            <a
-              className="photosOneByOne"
-              href={photo.permalink}
-              target="_blank"
-            >
-              <img
-                className="photoInstagram"
-                src={photo.media_url}
-                key={photo.id}
-              />
-              <AiOutlineInstagram className="iconInstagramInsideImage" />
-            </a>
-          ))}
+          {photos.map((photo) => renderPhoto(photo))}
         </div>
       </div>
     </div>

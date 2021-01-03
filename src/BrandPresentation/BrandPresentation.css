@@ -10,6 +10,7 @@
   width: 100%;
   height: auto;
   border-bottom: 5px solid #fae714;
+  opacity: 0.93;
 }
 .containerButtonAndLogo {
   display: flex;

@@ -25,8 +25,6 @@ export function Services() {
     imageTranslateXsmallScreen = 125;
   }
 
-  console.log(positionY);
-
   return (
     <div className="servicesWrapper">
       <div className="serviceLeft">
