@@ -1,12 +1,12 @@
 import React from "react";
 import "./Catalogue2.css";
-import kitKat from "./kitKat.JPG";
+import kitKat from "./kitKat.jpeg";
 import oreoDonut from "./oreo.jpg";
-import chocolina from "./chocolina.JPG";
-import cabsha from "./cabsha.JPG";
-import colorfulDonut from "./colorful.JPG";
-import pocketDonut from "./pocket.JPG";
-import cakeDonut from "./cakeDonut.JPG";
+import chocolina from "./chocolina.jpeg";
+import cabsha from "./cabsha.jpeg";
+import colorfulDonut from "./colorful.jpeg";
+import pocketDonut from "./pocket.jpeg";
+import cakeDonut from "./cakeDonut.jpeg";
 
 export function Catalogue2() {
   return (
