@@ -1,13 +1,14 @@
 .brandDescriptionWrapper {
   width: 100%;
   overflow: hidden;
+  margin-top: 100px;
+  position: relative;
 }
 
 .firstPagePhoto {
   object-fit: cover;
   width: 100%;
   height: auto;
-  padding-top: 100px;
   border-bottom: 5px solid #fae714;
 }
 .containerButtonAndLogo {
@@ -17,20 +18,16 @@
 }
 .firstPageLogo {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 30%;
   height: auto;
   z-index: 0;
-  top: 42%;
-  left: 34%;
 }
 
 @media (max-width: 425px) {
   .firstPagePhoto {
     width: 167%;
-  }
-
-  .firstPageLogo {
-    top: 39%;
-    left: 36%;
   }
 }
